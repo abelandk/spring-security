@@ -11,13 +11,28 @@
 
 	<properties>
 		<springframework.version>5.0.2.RELEASE</springframework.version>
-
+		<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
 
+		<!-- Spring Security -->
+		<!-- Spring security web -->
+		<dependency>
+  			<groupId>org.springframework.security</groupId>
+  			<artifactId>spring-security-web</artifactId>
+  			<version>${springsecurity.version}</version>
+		</dependency>
+	
+		<!-- Spring security config -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+			
 		<!-- Spring MVC support -->
 		<dependency>
 			<groupId>org.springframework</groupId>
