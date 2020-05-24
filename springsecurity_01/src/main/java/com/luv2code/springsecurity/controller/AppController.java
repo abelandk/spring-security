@@ -11,4 +11,10 @@ public class AppController {
 		
 		return "home";
 	}
+	
+	@GetMapping("/leaders")
+	public String showLeaders() {
+		
+		return "leaders";
+	}
 }
