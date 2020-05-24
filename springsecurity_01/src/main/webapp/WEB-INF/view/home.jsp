@@ -22,10 +22,13 @@
 
 	<hr>
 
-	<p>
-		<a href="${pageContext.request.contextPath}/leaders"> Leadership Meeting</a>
-	</p>
-
+	<security:authorize access="hasRole('MANAGER')">
+		<p>
+			<a href="${pageContext.request.contextPath}/leaders"> Leadership Meeting</a>
+		</p>
+		
+	</security:authorize>
+	
 	<form:form action="${pageContext.request.contextPath}/logout"
 		method="POST">
 
