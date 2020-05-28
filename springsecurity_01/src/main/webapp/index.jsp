@@ -8,5 +8,7 @@
 	</head>
 <body>
 	<a href="${pageContext.request.contextPath}/test/hello">Hello</a>
+		<a href="${pageContext.request.contextPath}/api/students">Students</a>
+	
 </body>
 </html>
